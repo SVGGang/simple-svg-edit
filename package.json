@@ -44,8 +44,8 @@
     "ie >= 11"
   ],
   "scripts": {
-    "build:dev": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --config webpack.config.js -d --mode=development && npm run copy-docs",
-    "build:prod": "export NODE_OPTIONS=--openssl-legacy-provider && webpack --config webpack.config.js -p --devtool cheap-module-source-map --mode=production && npm run copy-docs",
+    "build:dev": "webpack --config webpack.config.js -d --mode=development && npm run copy-docs",
+    "build:prod": "webpack --config webpack.config.js -p --devtool cheap-module-source-map --mode=production && npm run copy-docs",
     "copy-docs": "cp dist/* ./docs"
   }
 }
