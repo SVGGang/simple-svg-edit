@@ -20,7 +20,7 @@ module.exports = {
         entrypoints: false,
         hash: false,
     },
-    optimization: {
+    /*optimization: {
         minimizer: [
             new TerserPlugin({
                 terserOptions: {
@@ -36,7 +36,7 @@ module.exports = {
                 },
             }),
         ],
-    },
+    },*/
     plugins: [
         new MiniCssExtractPlugin({filename: '[name].css'}),
         new ESLintPlugin({
