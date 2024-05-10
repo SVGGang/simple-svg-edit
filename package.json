@@ -3,6 +3,9 @@
   "version": "1.1.4",
   "description": "Simple SVG editor",
   "main": "features/index.js",
+  "optimization": {
+      "minimize": false
+  },
   "authors": [
     {
       "name": "PaulZi",
